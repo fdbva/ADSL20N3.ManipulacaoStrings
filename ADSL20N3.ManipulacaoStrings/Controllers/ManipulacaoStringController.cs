@@ -36,6 +36,9 @@ namespace ADSL20N3.ManipulacaoStrings.Controllers
 
             inputResultModel.Results = isEqual ? "Igual" : "Diferente";
 
+            ViewData["viewDataExample"] = inputResultModel;
+            ViewBag.ViewBagExample = "asd";
+
             return View("Index", inputResultModel);
         }
     }

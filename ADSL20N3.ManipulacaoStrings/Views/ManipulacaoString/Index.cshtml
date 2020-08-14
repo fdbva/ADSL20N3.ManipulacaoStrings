@@ -1,7 +1,7 @@
 ﻿@model ADSL20N3.ManipulacaoStrings.Models.InputResultModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Manipulação String";
 
     //var result = Model == null ? string.Empty : Model.Results;
     var result = string.Empty;
@@ -9,11 +9,14 @@
     {
         result = Model.Results;
     }
+    var inputResultModel = (InputResultModel)@ViewData["viewDataExample"];
 }
 
-<h1>Index</h1>
+<h1>Manipulação String</h1>
 
 <h4>InputResultModel</h4>
+<p>@inputResultModel?.Results</p>
+<p>@ViewBag.ViewBagExample</p>
 <hr />
 <div class="row">
     <div class="col-md-4">
